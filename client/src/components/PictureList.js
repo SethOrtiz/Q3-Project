@@ -1,8 +1,7 @@
 // src/components/Navbar.js
 
 import React from "react";
-import PictureCard from "./PictureCard";
-// import PictureCard from "./PictureCard"
+import ProfileCard from "./ProfileCard";
 
 
 class PictureList extends React.Component {
@@ -20,6 +19,27 @@ class PictureList extends React.Component {
         console.log(this.state)
     };
 
+    deletePhoto = async  e => {
+        e.preventDefault();
+        console.log("im being deleted!");
+        console.log("id", e.target.id);
+        console.log("sub", e.target.name);
+        const picId = e.target.id;
+        const url = `http://localhost:8000/pictures/${picId}`;
+        console.log(picId)
+        // const pictureInfo =  this.state.savedImgs.filter(image => image.id == picId);
+        // console.log(pictureInfo)
+        const res = await fetch(url, {
+            method: "DELETE",
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+        if (res.ok){
+            alert('your image has been deleted!')
+        }
+    };
+
 
 
 
@@ -33,7 +53,7 @@ class PictureList extends React.Component {
 
                         <div className='row'>
 
-                            {userPics.map(image => <div className='col-5'> <PictureCard key={image.id} id={image.id} url={image.pictureUrl} userName={image.photographerName} userImg ={image.photographerImg} description={image.pictureDescription}  /> </div>)}
+                            {userPics.map(image => <div className='col-5'> <ProfileCard key={image.id} id={image.id} url={image.pictureUrl} userName={image.photographerName} userImg ={image.photographerImg} description={image.pictureDescription} deletePhoto={this.deletePhoto} /> </div>)}
 
                         </div>
             </div>
