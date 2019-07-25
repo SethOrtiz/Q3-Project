@@ -17,8 +17,6 @@ const PictureCard = (props) => {
         width: "20%",
 
     };
-  console.log(props.url);
-
   return (
     <Container className="card m-5 " >
       < div className="row" >
