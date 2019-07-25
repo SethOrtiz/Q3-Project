@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdccdf5a-2d06-44a6-a470-cb9a8f4bc23a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../client/src/components/PictureList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/PictureCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/PictureCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/components/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
