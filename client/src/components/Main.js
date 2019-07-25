@@ -4,11 +4,14 @@ import React from "react";
 import axios from "axios";
 import SearchBar from "./SearchBar";
 import PictureCard from "./PictureCard"
+
+
 class Main extends React.Component {
   state = {
     searchbar: "",
     images: []
   };
+
 
   onSearchSubmit = async e => {
     let searchTerm = this.state.searchbar;
@@ -36,9 +39,27 @@ class Main extends React.Component {
   };
 
 
-  savePhoto =  e => {
+  savePhoto =  async e => {
   e.preventDefault();
-  console.log("im being saved!")
+  console.log("im being saved!");
+    console.log("id", e.target.id);
+    console.log("sub", e.target.name);
+
+
+    const url = 'http://localhost:8000/pictures';
+    const userId = e.target.name;
+    const id = e.target.id;
+    const pictureInfo =  this.state.images.filter(image => image.id == id);
+    const res = await fetch(url, {
+      method: "POST",
+      body: JSON.stringify({userId:userId, pictureInfo:pictureInfo}),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+    if (res.ok){
+      alert('your image has been saved!')
+    }
   }
 
   render() {
@@ -51,9 +72,8 @@ class Main extends React.Component {
             <SearchBar updateSearch={this.updateSearch} onSearchSubmit={this.onSearchSubmit} />
           </div>
           <div className='row'>
-            <div className='col-5'>
-              {imageList.map(image => <PictureCard key={image.id} id={image.id} url={image.urls.regular}  savePhoto={this.savePhoto} />)}
-            </div>
+
+            {imageList.map(image => <div className='col-5'> <PictureCard key={image.id} id={image.id} url={image.urls.regular} userName={image.user.name} userImg ={image.user.profile_image.medium} description={image.alt_description}  savePhoto={this.savePhoto} /> </div>)}
 
           </div>
 

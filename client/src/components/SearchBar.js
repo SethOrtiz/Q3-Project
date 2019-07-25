@@ -11,7 +11,7 @@ function SearchBar({ updateSearch, onSearchSubmit }) {
             type="text"
             onChange={updateSearch}
             placeholder="Search for Photos"
-            className="lux-control"
+            // className="lux-control"
             style={{width: '40em'}}
           />
         </Form>
