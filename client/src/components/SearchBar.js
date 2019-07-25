@@ -1,25 +1,23 @@
 import React from "react";
-import { Form, Input, Container } from "reactstrap";
-
-const searchStyle = {
-  display: "flex",
-  alignItems: "center"
-};
+import { Form, Input } from "reactstrap";
 
 function SearchBar({ updateSearch, onSearchSubmit }) {
   return (
     <>
-      <Container>
-        <Form style={searchStyle} onSubmit={onSearchSubmit}>
+      <div   className="container-fluid space">
+        <Form   onSubmit={onSearchSubmit}>
           <Input
             bsSize="lg"
             type="text"
             onChange={updateSearch}
             placeholder="Search for Photos"
+            className="lux-control"
+            style={{width: '40em'}}
           />
         </Form>
-      </Container>
+      </div>
     </>
   );
 }
 export default SearchBar;
+

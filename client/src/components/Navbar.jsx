@@ -9,14 +9,14 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className="navbar navbar-light bg-light ">
+            <div className="navbar-lux navbar-light bg">
                     <span>
-                         <Link className='px-3' to="/">Home</Link>&nbsp;
-                        <Link to="/profile">Profile</Link>
+                         <Link className='px-3 navbar-brand' to="/">AppName</Link>&nbsp;
+                        <Link className='px-3 link'  to="/profile">Profile</Link>
+                        <Link className='px-3 link'  to="/profile">About</Link>
                      </span>
-
                 {!isAuthenticated && (
-                    <button className='btn btn-secondary'
+                    <button className='btn btn-light btn-lg lux'
                         onClick={() =>
                             loginWithRedirect({})
                         }
