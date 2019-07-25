@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdccdf5a-2d06-44a6-a470-cb9a8f4bc23a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../client/src/components/PictureList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrations/20190724104500_pictures.js" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrations/20190724104500_pictures.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds/02_pictures.js" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds/02_pictures.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/PictureCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/PictureCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -69,9 +71,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="852" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -145,15 +148,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1564086353467</updated>
-      <workItem from="1564086356079" duration="2335000" />
+      <workItem from="1564086356079" duration="3519000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2335000" />
+    <option name="totallyTimeSpent" value="3519000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="852" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="npm" side_tool="true" />
@@ -162,7 +165,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32923833" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.36021507" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -180,13 +183,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds/01_users.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -194,6 +190,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
         </state>
       </provider>
     </entry>
