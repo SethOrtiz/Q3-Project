@@ -4,6 +4,7 @@ import React from "react";
 import {CardText, Container } from "reactstrap";
 import {useAuth0} from "../react-auth0-wrapper";
 
+
 const PictureCard = (props) => {
 
     const {user } = useAuth0();

@@ -4,6 +4,7 @@ import React from "react";
 import axios from "axios";
 import SearchBar from "./SearchBar";
 import PictureCard from "./PictureCard"
+import {toast} from "react-toastify";
 
 
 class Main extends React.Component {
@@ -56,7 +57,7 @@ class Main extends React.Component {
       }
     });
     if (res.ok){
-      alert('your image has been saved!')
+      toast('Image has been saved!')
     }
   };
 
