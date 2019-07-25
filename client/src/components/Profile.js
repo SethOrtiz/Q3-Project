@@ -33,7 +33,7 @@ const Profile = (props) => {
           <img src="https://unsplash.com/photos/peFx2NFgUFY" alt="" />
         </div>
       </div>
-      
+
     </div>
   );
 };
