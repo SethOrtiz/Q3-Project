@@ -1,14 +1,8 @@
 exports.up = function(knex, Promise) {
   return knex.schema.createTable("pictures", function(table) {
     table.increments();
-    table.string("photoId");
-    table
-      .integer("userId")
-      .notNullable()
-      .references("id")
-      .inTable("users")
-      .onDelete("CASCADE")
-      .index();
+    table.string("userId")
+    table.string("pictureInfo");
   });
 };
 exports.down = function(knex, Promise) {
