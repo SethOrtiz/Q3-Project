@@ -47,7 +47,7 @@ class Main extends React.Component {
     const url = 'http://localhost:8000/pictures';
     const userId = e.target.name;
     const id = e.target.id;
-    const pictureInfo =  this.state.images.filter(image => image.id == id);
+    const pictureInfo =  this.state.images.filter(image => image.id === parseInt(id));
     const res = await fetch(url, {
       method: "POST",
       body: JSON.stringify({userId:userId, pictureInfo:pictureInfo}),
