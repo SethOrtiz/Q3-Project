@@ -113,3 +113,24 @@
   -o-background-size: contain;
   background-size: contain;
 }
+
+.card-size {
+  width: 30em;
+}
+
+.box{
+  position: relative;
+  display: inline-block; /* Make the width of box same as image */
+}
+
+.box .btn{
+  position: absolute;
+  z-index: 999;
+  margin:  0.5em;
+  left: 90;
+  right: 0;
+  top: 0%; /* Adjust this value to move the positioned div up and down */
+  text-align: center;
+  width: 30%; /* Set the width of the positioned div */
+  opacity: 0.9;
+}

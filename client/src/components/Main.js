@@ -3,7 +3,7 @@
 import React from "react";
 import axios from "axios";
 import SearchBar from "./SearchBar";
-
+import PictureCard from "./PictureCard"
 class Main extends React.Component {
   state = {
     searchbar: "",
@@ -40,6 +40,7 @@ class Main extends React.Component {
           <div>
             <SearchBar updateSearch={this.updateSearch} onSearchSubmit={this.onSearchSubmit} />
           </div>
+          <PictureCard/>
         </div>
       </div>
     );
