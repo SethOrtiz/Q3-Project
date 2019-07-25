@@ -3,6 +3,7 @@
 import React from "react";
 import { useAuth0 } from "../react-auth0-wrapper";
 import PictureList from './PictureList'
+import ProfileEditForm from "./ProfileEditForm"
 // import PictureCard from "./PictureCard"
 
 const Profile = (props) => {
@@ -23,7 +24,7 @@ const Profile = (props) => {
       <h2>name: {user.nickname}</h2>
       <p>email: {user.email}</p>
       <p>{user.sub}</p>
-
+<ProfileEditForm/>
       <code>{JSON.stringify(user, null, 2)}</code>
 
       <div>
