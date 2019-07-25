@@ -4,14 +4,8 @@ import React from "react";
 import { useAuth0 } from "../react-auth0-wrapper";
 
 
-class Profile extends React.Component  {
+const Profile = () => {
 
-    state = {
-
-    };
-
-
-    render() {
         let imgStyle={
             borderRadius: "50%",
             height: "7em",
@@ -43,7 +37,6 @@ class Profile extends React.Component  {
             </div>
         </div>
     );
-    }
-}
+};
 
 export default Profile;
