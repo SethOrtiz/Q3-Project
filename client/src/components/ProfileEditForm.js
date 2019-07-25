@@ -3,7 +3,6 @@
 import React from "react";
 
 import {
-  Button,
   Modal,
   ModalHeader,
   ModalBody,
@@ -33,7 +32,7 @@ class ProfileEditForm extends React.Component {
       <div>
         <button className="btn btn-dark lux" onClick={this.toggle}>
           {this.props.buttonLabel}
-          
+
         </button>
         <Modal
           isOpen={this.state.modal}
