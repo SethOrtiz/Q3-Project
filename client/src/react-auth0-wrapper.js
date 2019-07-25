@@ -34,6 +34,8 @@ export const Auth0Provider = ({
             if (isAuthenticated) {
                 const user = await auth0FromHook.getUser();
                 setUser(user);
+                const token = await auth0FromHook.getIdTokenClaims();
+                console.log('token', token);
             }
 
             setLoading(false);
@@ -51,6 +53,8 @@ export const Auth0Provider = ({
         } finally {
             setPopupOpen(false);
         }
+        const token = await auth0Client.getIdTokenClaims();
+        console.log('token',token);
         const user = await auth0Client.getUser();
         setUser(user);
         setIsAuthenticated(true);
@@ -60,6 +64,8 @@ export const Auth0Provider = ({
         setLoading(true);
         await auth0Client.handleRedirectCallback();
         const user = await auth0Client.getUser();
+        const token = await auth0Client.getIdTokenClaims();
+        console.log('Token', token);
         setLoading(false);
         setIsAuthenticated(true);
         setUser(user);
