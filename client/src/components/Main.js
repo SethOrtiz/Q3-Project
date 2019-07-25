@@ -50,7 +50,7 @@ class Main extends React.Component {
     const pictureInfo =  this.state.images.filter(image => image.id == id);
     const res = await fetch(url, {
       method: "POST",
-      body: JSON.stringify({userId:userId, pictureInfo:pictureInfo}),
+      body: JSON.stringify({userId:userId, pictureUrl:pictureInfo[0].urls.regular, pictureId:pictureInfo[0].id, photographerName:pictureInfo[0].user.name , photographerImg:pictureInfo[0].user.profile_image.medium, pictureDescription:pictureInfo[0].alt_description}),
       headers: {
         'Content-Type': 'application/json'
       }
