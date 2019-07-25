@@ -41,11 +41,9 @@ class Main extends React.Component {
 
   savePhoto =  async e => {
   e.preventDefault();
-  console.log("im being saved!");
+    console.log("im being saved!");
     console.log("id", e.target.id);
     console.log("sub", e.target.name);
-
-
     const url = 'http://localhost:8000/pictures';
     const userId = e.target.name;
     const id = e.target.id;
@@ -56,11 +54,11 @@ class Main extends React.Component {
       headers: {
         'Content-Type': 'application/json'
       }
-    })
+    });
     if (res.ok){
       alert('your image has been saved!')
     }
-  }
+  };
 
   render() {
     let imageList = this.state.images;
