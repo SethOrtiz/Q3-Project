@@ -7,7 +7,7 @@ import PictureCard from "./PictureCard"
 class Main extends React.Component {
   state = {
     searchbar: "",
-    images: {}
+    images: []
   };
 
   onSearchSubmit = async e => {
@@ -27,13 +27,23 @@ class Main extends React.Component {
       images: response.data.results
     });
   };
+
   updateSearch = e => {
     e.preventDefault();
     this.setState({
       searchbar: e.target.value
     });
   };
+
+
+  savePhoto =  e => {
+  e.preventDefault();
+  console.log("im being saved!")
+  }
+
   render() {
+    let imageList = this.state.images;
+    console.log(imageList);
     return (
       <div>
         <div>
@@ -42,14 +52,9 @@ class Main extends React.Component {
           </div>
           <div className='row'>
             <div className='col-5'>
-              <PictureCard/>
+              {imageList.map(image => <PictureCard key={image.id} id={image.id} url={image.urls.regular}  savePhoto={this.savePhoto} />)}
             </div>
-            <div className='col-5'>
-              <PictureCard/>
-            </div>
-            <div className='col-5'>
-              <PictureCard/>
-            </div>
+
           </div>
 
 
