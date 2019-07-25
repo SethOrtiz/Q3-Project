@@ -2,6 +2,8 @@
 
 import React from "react";
 import ProfileCard from "./ProfileCard";
+import {toast} from "react-toastify";
+
 
 
 class PictureList extends React.Component {
@@ -38,7 +40,8 @@ class PictureList extends React.Component {
         if (res.ok){
             this.setState(prevState => ({
                 savedImgs: prevState.savedImgs.filter(image => image.id != picId)
-            }))
+            }));
+            toast("Image has been deleted!")
         }
     };
 
