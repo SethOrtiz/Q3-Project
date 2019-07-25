@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdccdf5a-2d06-44a6-a470-cb9a8f4bc23a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../client/src/components/ProfileCard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/src/components/PictureList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/PictureList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -142,12 +139,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1564086353467</updated>
-      <workItem from="1564086356079" duration="3881000" />
+      <workItem from="1564086356079" duration="4461000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3881000" />
+    <option name="totallyTimeSpent" value="4461000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />

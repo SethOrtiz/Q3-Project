@@ -36,7 +36,9 @@ class PictureList extends React.Component {
             }
         });
         if (res.ok){
-            alert('your image has been deleted!')
+            this.setState(prevState => ({
+                savedImgs: prevState.savedImgs.filter(image => image.id != picId)
+            }))
         }
     };
 
