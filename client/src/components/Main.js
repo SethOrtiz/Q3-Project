@@ -40,7 +40,19 @@ class Main extends React.Component {
           <div>
             <SearchBar updateSearch={this.updateSearch} onSearchSubmit={this.onSearchSubmit} />
           </div>
-          <PictureCard/>
+          <div className='row'>
+            <div className='col-5'>
+              <PictureCard/>
+            </div>
+            <div className='col-5'>
+              <PictureCard/>
+            </div>
+            <div className='col-5'>
+              <PictureCard/>
+            </div>
+          </div>
+
+
         </div>
       </div>
     );
