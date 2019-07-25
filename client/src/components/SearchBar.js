@@ -6,14 +6,10 @@ const searchStyle = {
   alignItems: "center"
 };
 
-const formContainerStyle = {
-  marginTop: "6em"
-};
-
 function SearchBar({ updateSearch, onSearchSubmit }) {
   return (
     <>
-      <Container style={formContainerStyle}>
+      <Container>
         <Form style={searchStyle} onSubmit={onSearchSubmit}>
           <Input
             bsSize="lg"
