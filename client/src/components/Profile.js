@@ -3,7 +3,7 @@
 import React from "react";
 import { useAuth0 } from "../react-auth0-wrapper";
 import PictureList from './PictureList'
-import PictureCard from "./PictureCard"
+// import PictureCard from "./PictureCard"
 
 const Profile = (props) => {
     console.log(props.savedImgs)
