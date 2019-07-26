@@ -10,19 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 class App extends React.Component {
 
-    state = {
-        savedImgs:[]
-    }
 
-    componentDidMount = async () => {
-        const res = await fetch('http://localhost:8000/pictures');
-        const json = await res.json();
-        this.setState(prevState => ({
-            ...prevState,
-            savedImgs: json
-        }));
-        console.log(this.state)
-    };
     render() {
     return(
 
@@ -33,7 +21,7 @@ class App extends React.Component {
 </header>
 <Switch>
 <Route path="/" component={Main} exact />
-<PrivateRoute path="/profile" component={Profile} savedImgs={this.state.savedImgs} />
+<PrivateRoute path="/profile" component={Profile} />
 </Switch>
 </BrowserRouter>
     <ToastContainer

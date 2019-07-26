@@ -44,7 +44,7 @@ class Main extends React.Component {
     console.log("im being saved!");
     console.log("id", e.target.id);
     console.log("sub", e.target.name);
-    const url = 'http://localhost:8000/pictures';
+    const url = 'https://pinstagram-galvanize-q3.herokuapp.com/pictures';
     const userId = e.target.name;
     const id = e.target.id;
     const pictureInfo =  this.state.images.filter(image => image.id === id);

@@ -12,7 +12,7 @@ class PictureList extends React.Component {
     };
 
     componentDidMount = async () => {
-        const res = await fetch('http://localhost:8000/pictures');
+        const res = await fetch('https://pinstagram-galvanize-q3.herokuapp.com/pictures/');
         const json = await res.json();
         this.setState(prevState => ({
             ...prevState,
@@ -27,7 +27,7 @@ class PictureList extends React.Component {
         console.log("id", e.target.id);
         console.log("sub", e.target.name);
         const picId = e.target.id;
-        const url = `http://localhost:8000/pictures/${picId}`;
+        const url = `https://pinstagram-galvanize-q3.herokuapp.com/pictures/${picId}`;
         console.log(picId)
         // const pictureInfo =  this.state.savedImgs.filter(image => image.id == picId);
         // console.log(pictureInfo)
@@ -39,6 +39,7 @@ class PictureList extends React.Component {
         });
         if (res.ok){
             this.setState(prevState => ({
+                //eslint-disable-next-line
                 savedImgs: prevState.savedImgs.filter(image => image.id != picId)
             }));
             toast("Image has been deleted!")
