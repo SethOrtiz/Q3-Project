@@ -15,11 +15,11 @@ const Footer = () => {
             </div>
 
             <div className="col-md-6 text-center text-md-right">
-                <div className="social">
-                    <a className="social-facebook" href="#">Facebook</a>
-                    <a className="social-twitter mx-2" href="#">Twitter</a>
-                    <a className="social-instagram" href="#">Instagram</a>
-                    <a className="social-youtube mx-2" href="#">YouTube</a>
+                <div className="social ">
+                    <a className="social-facebook text-dark" href="#">Facebook</a>
+                    <a className="social-twitter mx-2 text-dark" href="#">Twitter</a>
+                    <a className="social-instagram text-dark" href="#">Instagram</a>
+                    <a className="social-youtube mx-2 text-dark" href="#">YouTube</a>
                 </div>
             </div>
 
