@@ -18,17 +18,17 @@ class PictureList extends React.Component {
             ...prevState,
             savedImgs: json
         }));
-        console.log(this.state)
+        // console.log(this.state)
     };
 
     deletePhoto = async  e => {
         e.preventDefault();
-        console.log("im being deleted!");
-        console.log("id", e.target.id);
-        console.log("sub", e.target.name);
+        // console.log("im being deleted!");
+        // console.log("id", e.target.id);
+        // console.log("sub", e.target.name);
         const picId = e.target.id;
         const url = `https://pinstagram-galvanize-q3.herokuapp.com/pictures/${picId}`;
-        console.log(picId)
+        // console.log(picId)
         // const pictureInfo =  this.state.savedImgs.filter(image => image.id == picId);
         // console.log(pictureInfo)
         const res = await fetch(url, {
@@ -51,9 +51,9 @@ class PictureList extends React.Component {
 
 
     render() {
-        console.log(this.props.userId)
+        // console.log(this.props.userId)
     const userPics = this.state.savedImgs.filter(picture => picture.userId === this.props.userId)
-        console.log(userPics)
+        // console.log(userPics)
         return (
             <div>
 

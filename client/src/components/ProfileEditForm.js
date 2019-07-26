@@ -45,7 +45,7 @@ class ProfileEditForm extends React.Component {
 
   onSubmit = async e => {
     e.preventDefault();
-    const url = 'https://pinstagram-galvanize-q3.herokuapp.com/users';
+    const url = 'http://localhost:8000/users';
     const userId = this.props.userId; 
     const userName = this.state.userName
     const bio = this.state.bio;
@@ -64,6 +64,7 @@ class ProfileEditForm extends React.Component {
     });
     if (res.ok) {
       toast("Profile Has Been Updated!");
+    this.props.updateProfile(this.state)
     }
   };
 

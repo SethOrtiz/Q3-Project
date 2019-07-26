@@ -27,24 +27,32 @@ class UserInfoDB extends React.Component {
     bioDB: ""
   };
 
-  componentDidMount = async () => {
-    const res = await fetch(
-      `https://pinstagram-galvanize-q3.herokuapp.com/users/${this.props.userId}`
-    );
-    const json = await res.json();
+  // componentDidMount = async () => {
+  //   console.log("userID in db fetch", this.props.userId)
+  //   const id = this.props.userId
+  //   const url = `http://localhost:8000/users/${id}`
+  //   const res = await fetch(url);
+  //   const json = await res.json();
+  //   this.setState(prevState => ({
+  //     ...prevState,
+  //     userNameDB: json.userName,
+  //     profilePicDB: json.profilePic,
+  //     bioDB: json.bio
+  //   }));
+  //   console.log(this.state);
+  // };
+
+  updateProfle = (newState) => {
     this.setState(prevState => ({
       ...prevState,
-      userNameDB: json.userName,
-      profilePicDB: json.profilePic,
-      bioDB: json.bio
+      ...newState
     }));
-    console.log(this.state);
-  };
+  }
 
   render() {
     const userNameDB = this.state.userName;
     const profilePicDB = this.state.profilePic;
-    const bioDB = this.state.bioDB;
+    const bioDB = this.state.bio;
     return (
       <div className="container" style={infoStyle}>
         <div className="row" style={topStyle}>
@@ -60,7 +68,7 @@ class UserInfoDB extends React.Component {
               <h5>{bioDB}</h5>
             </div>
           <div className="col-lg-2">
-            <ProfileEditForm userId={this.props.userId} />
+            <ProfileEditForm userId={this.props.userId} updateProfile={this.updateProfle} />
           </div>
         </div>
       </div>
