@@ -9,13 +9,23 @@ const ProfileCard = (props) => {
     const {user } = useAuth0();
 
     let imgStyle={
-        width: "90%",
+        width: "100%",
 
     };
     let profileImg={
         borderRadius: "50%",
-        width: "20%",
+        width: "40%",
 
+    };
+    let btnStyle ={
+        position: "absolute",
+        zIndex: "999",
+        margin:  "0.5em",
+        left: "90",
+        right: "0",
+        top: "0%", /* Adjust this value to move the positioned div up and down */
+        width: "30%", /* Set the width of the positioned div */
+        opacity: "0.9",
     };
     return (
         <Container className="card m-5 " >
@@ -23,7 +33,7 @@ const ProfileCard = (props) => {
                 <div className="col-8">
                     <div className="box">
                         <img src={props.url} alt="img" className="card-size" style={imgStyle} />
-                        <button className="btn btn-light" onClick={props.deletePhoto} id={props.id} name={user.sub}>Button</button>
+                        <button className="btn btn-light" style={btnStyle} onClick={props.deletePhoto} id={props.id} name={user.sub}>Delete</button>
                     </div>
                 </div>
                 <div className='col-4'>
