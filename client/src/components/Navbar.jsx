@@ -11,9 +11,9 @@ const Navbar = () => {
         <div>
             <div className="navbar-lux navbar-light bg">
                     <span>
-                         <Link className='px-3 navbar-brand' to="/">AppName</Link>&nbsp;
+                         <Link className='px-3 navbar-brand' to="/">Pinstagram</Link>&nbsp;
                         <Link className='px-3 link'  to="/profile">Profile</Link>
-                        <Link className='px-3 link'  to="/profile">About</Link>
+                        <Link className='px-3 link'  to="/about">About</Link>
                      </span>
                 {!isAuthenticated && (
                     <button className='btn btn-light btn-lg lux'
