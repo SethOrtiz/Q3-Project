@@ -7,6 +7,8 @@ import Main from "./components/Main";
 import PrivateRoute from "./components/PrivateRoute";
 import {ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import About from './components/About'
+import Footer from './components/Footer'
 
 class App extends React.Component {
 
@@ -21,8 +23,10 @@ class App extends React.Component {
 </header>
 <Switch>
 <Route path="/" component={Main} exact />
+<Route path="/about" component={About} exact/>
 <PrivateRoute path="/profile" component={Profile} />
 </Switch>
+    <Footer />
 </BrowserRouter>
     <ToastContainer
         position="top-right"
